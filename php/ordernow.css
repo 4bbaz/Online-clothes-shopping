@@ -1,0 +1,422 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Azonix3;
+    color:white;
+    
+}
+body{
+    background-color: #161616;
+}
+@font-face{
+    font-family: Azonix;
+    src: url("../fonts/The Amazing Spider-Man.ttf");
+  }
+  @font-face{
+    font-family: Azonix3;
+    src: url("../fonts/ReemKufi-Regular.ttf");
+  }
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 3px solid black;
+    border-radius: 50%;
+    border-top: 3px solid white;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.3s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+  }
+
+
+.icons{
+    float: right;
+    }
+    .topnav{
+       background-color: black;
+        position: sticky;
+        height: 6vh;
+        top: 0;
+        clear: none;
+        z-index: 1;
+    }
+    #logo {
+      font-family: Azonix;
+      opacity: 0.8;
+      font-size: 30px;
+    }
+    #logo:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    .topnav a{
+        
+        float: left;
+        display: block;
+        font-size: 18px;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+        opacity: .6;
+        transition: .3s ease;
+    }
+    .topnav a:hover{
+    opacity: 1;
+    
+    }
+    
+    .search {
+      background-color: black;
+      float: right;
+      height: 50px;
+      border-radius: 50px;
+    }
+    .topnav input[type=text]{
+      padding: 6px;
+      margin-top:8px;
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      border:none;
+      border-radius: 50px;
+      transition: all 0.3s;
+    }
+    
+    .topnav .search button{
+      border-radius: 50px;
+      float: right;
+      margin-top:8px;
+      margin-right: 16px;
+      font-size: 20px;
+      padding: 6px 10px;
+      background-color: black;
+      color:white;
+      border: none;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: .3s;
+    
+    }
+    input[type=text]:focus {outline:0;}
+    input[type=submit]:focus {outline:0;}
+    input[type=email]:focus {outline:0;}
+    button:focus {outline:0;}
+    
+    .search button:hover{
+      opacity: 1;
+    }
+
+/*ordered*/
+#php {
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+}
+#ordered{
+    font-size: 28px;
+    text-align: center;
+}
+.howclick{
+    
+    font-size: 25px;
+}
+#hereaddress{
+    font-size: 30px;
+    padding: 0 180px;
+    float: right;
+
+}
+#heread{
+    font-size:20px;
+    padding: 0 40px;
+}
+#inform{
+    width: 100%;
+    margin-bottom: 90px;
+}
+#inform1{
+    width: 50%;
+    float: left;
+    padding: 0 50px;
+    font-size: 30px;
+    height: 50vh;
+}
+#checkmail{
+    font-size: 30px;
+}
+
+
+
+
+
+.enteraddress{
+    float: left;
+    background-color: #161616;
+    font-size: 40px;
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 50px;
+    
+}
+.form1{
+    padding: 30px 200px;
+    background-color: #161616;
+    
+}
+table, input[type="text"],[type="email"], select {
+    font-size: 30px;
+}
+table{
+    text-align: center;
+}
+select{
+    background-color: black;
+    color: white;
+    border:none;
+    border-radius: 10px;
+    width: 300px;
+}
+.form1 input[type="text"], [type="email"]{
+    background: black;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+table td{
+    padding: 6px 30px;
+}
+
+#column1{
+    text-align: right;
+    opacity: 0.6;
+}
+.click input{
+    color: white;
+    background-color: #161616;
+    border: 1px solid white;
+    font-size: 30px;
+    padding: 6px;
+    width: 150px;
+    transition: 0.3s ;
+}
+.click input:hover{
+    color:black;
+    background-color: white;
+}
+#btnclick{
+    height: 12vh;
+}
+
+
+
+
+.relatedproducts{
+    max-height: 55%;
+    float: left;
+    width: 100%;
+    
+    
+}
+.relatedtitle h1{
+    font-family: Azonix3;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+
+}
+.relatedimgs{
+    padding: 0 160px;
+    margin-top: 20px;
+}
+.column1{
+    float: left;
+    padding: 18px;
+}
+.card{
+    overflow: hidden;
+    vertical-align: middle;
+    height: 333px; 
+    width: 260px; 
+    outline: solid 3px rgba(151, 130, 130, 0.801); 
+    transition: outline 0.3s ease-in-out;
+}
+.card:hover, .card:focus, .card:active {
+    outline: 6px solid #ffffff;
+}
+.card img{
+    width:230px;
+    padding: 13.5px 15px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.card:hover img{
+    transform: scale(1.2);
+}
+
+
+.productsnames{
+    margin-top: 8px;
+    text-align: center;
+}
+.productsnames a{
+   
+    text-decoration: none;
+    color:white;
+    
+}
+.productsnames p{
+    color: white;
+    font-family: Azonix3;
+    opacity: 0.8;
+}
+.productsnames p:hover {
+    opacity: 1;
+}
+
+
+
+#foot{
+    height: 30vh;
+    float: left;
+    background-color: black;
+    width: 100%;
+}
+.footdetails{
+    background-color:black;
+    padding-left: 8%;
+}
+.footlists{
+    background-color:black;
+    float: left;
+    padding: 30px;
+    color: white;
+}
+.footlists h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+.footlists p{
+    background-color:black;
+    padding: 4px;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.footlists p:hover{
+    opacity: 1;
+}
+
+.conact{
+    background-color:black;
+    float: left;
+    color: white;
+    padding-top: 3%;
+    padding-left: 10%;
+}
+.conacttitle{
+    background-color:black;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.6;
+}
+.socialmediaicons{
+    background-color:black;
+    font-size: 30px;
+}
+.socialmediaicons i{
+    background-color:black;
+    padding: 16px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+.socialmediaicons i:hover{
+    opacity: 1;
+}
+
+.email{
+    background-color:black;
+    float: left;
+    margin-top: 2%;
+}
+.email p{
+    background-color:black;
+    opacity: 0.5;
+    font-size: 14px;
+}
+.email input{
+    background-color:black;
+    font-size: 15px;
+    width: 50vh;
+    padding: 12px 14px;
+    border: none;
+    color: white;
+    opacity: 0.5;
+}
+.button{
+    float: right;
+    margin-top: 2%;
+}
+.button a{
+    border:1px solid white;
+    padding: 12px 14px;
+    color:white;
+    text-decoration: none;
+    font: 7px;
+    opacity: 0.6;
+    transition: .3s ease;
+}
+.button a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    opacity: 1;
+    
+}
+.apptitle{
+    background-color:black;
+    float: right;
+    margin-right: 32%;
+}
+
+.apps{
+    background-color:black;
+    float: right;
+    margin-right: 20%;
+}
+.apps i{
+    background-color:black;
+    padding: 16px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
