@@ -65,7 +65,7 @@ float: right;
 .topnav{
    background-color: black;
     position: sticky;
-    height: 6vh;
+    height: 60px;
     top: 0;
     clear: none;
     z-index: 1;
@@ -223,16 +223,17 @@ opacity: 1;
       opacity: 1;
   }
 #foot{
-  float: left;
+  display: flex;
+  justify-content: space-between;
   background-color: black;
   width: 100%;
 }
 .footdetails{
-  background-color:black;
+ 
   padding-left: 8%;
 }
 .footlists{
-  background-color:black;
+  
   float: left;
   padding: 30px;
   color: white;
@@ -243,7 +244,7 @@ opacity: 1;
   opacity: .6;
 }
 .footlists p{
-  background-color:black;
+  
   padding: 4px;
   opacity: 0.5;
   transition: 0.3s ease;
@@ -254,7 +255,6 @@ opacity: 1;
 }
 
 .conact{
-  background-color:black;
   float: left;
   color: white;
   padding-top: 3%;

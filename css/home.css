@@ -1,168 +1,178 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Azonix3;
+  scroll-behavior: smooth;
+  background-color: #1a1a1a;
 }
-@font-face{
-    font-family: Azonix3;
-    src: url("../fonts/ReemKufi-Regular.ttf");
-  }
-  @font-face{
-    font-family: Azonix2;
-    src: url("../fonts/The\ Amazing\ Spider-Man.ttf");
-  }
-  @font-face{
-    font-family: Azonix1;
-    src: url("../fonts/BebasNeue-Regular.ttf");
-  }
+@font-face {
+  font-family: Azonix3;
+  src: url("../fonts/ReemKufi-Regular.ttf");
+}
+@font-face {
+  font-family: Azonix2;
+  src: url("../fonts/The\ Amazing\ Spider-Man.ttf");
+}
+@font-face {
+  font-family: Azonix1;
+  src: url("../fonts/BebasNeue-Regular.ttf");
+}
 
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 3px solid black;
+  border-radius: 50%;
+  border-top: 3px solid white;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.3s linear infinite;
+}
 
-
-  #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border: 3px solid black;
-    border-radius: 50%;
-    border-top: 3px solid white;
-    width: 40px;
-    height: 40px;
-    animation: spin 0.3s linear infinite;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
   }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    animation-name: animatebottom;
-    animation-duration: 1s
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
   }
-  
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-
-  }
-
-
-
- 
-.icons{
-    float: right;
-    }
-    .topnav{
-       background-color: black;
-        position: sticky;
-        height: 6vh;
-        top: 0;
-        clear: none;
-        z-index: 1;
-    }
-    #logo {
-      font-family: Azonix2;
-      opacity: 0.8;
-      font-size: 30px;
-    }
-    #logo:hover{
-        opacity: 1;
-        cursor: pointer;
-    }
-    .topnav a{
-        
-        float: left;
-        display: block;
-        font-size: 18px;
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        text-align: center;
-        opacity: .6;
-        transition: .3s ease;
-    }
-    .topnav a:hover{
+  to {
+    bottom: 0;
     opacity: 1;
-    
-    }
-    
-    .search {
-      background-color: black;
-      float: right;
-      height: 50px;
-      border-radius: 50px;
-    }
-    .topnav input[type=text]{
-      padding: 6px;
-      margin-top:8px;
-      font-size: 20px;
-      background-color: black;
-      color: white;
-      border:none;
-      border-radius: 50px;
-      transition: all 0.3s;
-    }
-    
-    .topnav .search button{
-      border-radius: 50px;
-      float: right;
-      margin-top:8px;
-      margin-right: 16px;
-      font-size: 20px;
-      padding: 6px 10px;
-      background-color: black;
-      color:white;
-      border: none;
-      cursor: pointer;
-      opacity: 0.6;
-      transition: .3s;
-    
-    }
-    input[type=text]:focus {outline:0;}
-    input[type=submit]:focus {outline:0;}
-    input[type=email]:focus {outline:0;}
-    button:focus {outline:0;}
-    
-    .search button:hover{
-      opacity: 1;
-    }
-
-.search button:focus {outline:0;}
-.product-preview img{
-    height: 80px;
-    margin: 10px 0;
-    cursor: pointer;
-    display: block;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
+  }
 }
 
+#myDiv {
+  display: none;
+}
 
-
-
-.container{
-    width: 100%;
+.icons {
+  float: right;
+}
+.topnav {
+  background-color: black;
+  position: sticky;
+  height: 60px;
+  top: 0;
+  clear: none;
+  z-index: 1;
+}
+#logo {
+  font-family: Azonix2;
+  opacity: 0.8;
+  font-size: 30px;
+}
+#logo:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.topnav a {
   float: left;
-
+  display: block;
+  font-size: 18px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s ease;
 }
-.container .title{
+.topnav a:hover {
+  opacity: 1;
+}
+
+.search {
+  background-color: black;
+  float: right;
+  height: 50px;
+  border-radius: 50px;
+}
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.topnav .search button {
+  border-radius: 50px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 20px;
+  padding: 6px 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+input[type="text"]:focus {
+  outline: 0;
+}
+input[type="submit"]:focus {
+  outline: 0;
+}
+input[type="email"]:focus {
+  outline: 0;
+}
+button:focus {
+  outline: 0;
+}
+
+.search button:hover {
+  opacity: 1;
+}
+
+.search button:focus {
+  outline: 0;
+}
+.product-preview img {
+  height: 80px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .title {
   color: #1a1a1a;
   text-align: center;
 }
 
 .content {
-    float: left;
+  float: left;
   position: relative;
   width: 50%;
   padding: 9px;
@@ -171,17 +181,15 @@ body{
   overflow: hidden;
 }
 
-
-
-.content-image{
-    width: auto;
-    overflow: hidden;
+.content-image {
+  width: auto;
+  overflow: hidden;
 }
 
-.content-image img{
+.content-image img {
   width: 100%;
   padding: 0 20px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .content-details {
@@ -196,155 +204,149 @@ body{
   transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details{
+.content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
-.content:hover .content-image img{
-        transform: scale(1.4) rotate(16deg);
-        opacity: 0.6;
-    
-    
+.content:hover .content-image img {
+  transform: scale(1.4) rotate(16deg);
+  opacity: 0.6;
 }
 
-
-.content-details h3{
+.content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
-.content-details p{
+.content-details p {
   color: #fff;
   font-size: 0.8em;
 }
 
-.fadeIn-bottom{
+.fadeIn-bottom {
   top: 80%;
 }
 
+#foot {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  
+  padding-left: 8%;
+  padding-right: 8%;
 
-
-
-
-
-
-#foot{
-    height: 30vh;
-    float: left;
-    background-color: black;
-    width: 100%;
 }
-.footdetails{
-    background-color:black;
-    padding-left: 8%;
+.footdetails {
+  display: flex;
+  justify-content: space-between;
+
 }
-.footlists{
-    background-color:black;
-    float: left;
-    padding: 30px;
-    color: white;
+.footlists {
+
+  float: left;
+  padding: 30px;
+  color: white;
 }
-.footlists h3{
-    font-size: 16px;
-    margin-bottom: 20px;
-    opacity: .6;
+.footlists h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  opacity: 0.6;
 }
-.footlists p{
-    background-color:black;
-    padding: 4px;
-    opacity: 0.5;
-    transition: 0.3s ease;
-    cursor: pointer;
+.footlists p {
+  background-color: black;
+  padding: 4px;
+  opacity: 0.5;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-.footlists p:hover{
-    opacity: 1;
+.footlists p:hover {
+  opacity: 1;
 }
 
-.conact{
-    background-color:black;
-    float: left;
-    color: white;
-    padding-top: 3%;
-    padding-left: 10%;
+.conact {
+  background-color: black;
+  float: left;
+  color: white;
+  padding-top: 3%;
+  padding-left: 10%;
 }
-.conacttitle{
-    background-color:black;
-    font-weight: bold;
-    font-size: 16px;
-    opacity: 0.6;
+.conacttitle {
+  background-color: black;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0.6;
 }
-.socialmediaicons{
-    background-color:black;
-    font-size: 30px;
+.socialmediaicons {
+  background-color: black;
+  font-size: 30px;
 }
-.socialmediaicons i{
-    background-color:black;
-    padding: 16px;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.3s ease-in-out;
+.socialmediaicons i {
+  background-color: black;
+  padding: 16px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
-.socialmediaicons i:hover{
-    opacity: 1;
-}
-
-.email{
-    background-color:black;
-    float: left;
-    margin-top: 2%;
-}
-.email p{
-    background-color:black;
-    opacity: 0.5;
-    font-size: 14px;
-}
-.email input{
-    background-color:black;
-    font-size: 15px;
-    width: 50vh;
-    padding: 12px 14px;
-    border: none;
-    color: white;
-    opacity: 0.5;
-}
-.button{
-    float: right;
-    margin-top: 2%;
-}
-.button a{
-    border:1px solid white;
-    padding: 12px 14px;
-    color:white;
-    text-decoration: none;
-    font: 7px;
-    opacity: 0.6;
-    transition: .3s ease;
-}
-.button a:hover{
-    background-color: white;
-    color: black;
-    border: 1px solid white;
-    opacity: 1;
-    
-}
-.apptitle{
-    background-color:black;
-    float: right;
-    margin-right: 32%;
+.socialmediaicons i:hover {
+  opacity: 1;
 }
 
-.apps{
-    background-color:black;
-    float: right;
-    margin-right: 20%;
+.email {
+  background-color: black;
+  float: left;
+  margin-top: 2%;
 }
-.apps i{
-    background-color:black;
-    padding: 16px;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.3s ease-in-out;
+.email p {
+  background-color: black;
+  opacity: 0.5;
+  font-size: 14px;
+}
+.email input {
+  background-color: black;
+  font-size: 15px;
+  width: 50vh;
+  padding: 12px 14px;
+  border: none;
+  color: white;
+  opacity: 0.5;
+}
+.button {
+  float: right;
+  margin-top: 2%;
+}
+.button a {
+  border: 1px solid white;
+  padding: 12px 14px;
+  color: white;
+  text-decoration: none;
+  font: 7px;
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+.button a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  opacity: 1;
+}
+.apptitle {
+  background-color: black;
+  float: right;
+  margin-right: 32%;
+}
+
+.apps {
+  background-color: black;
+  float: right;
+  margin-right: 20%;
+}
+.apps i {
+  background-color: black;
+  padding: 16px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
